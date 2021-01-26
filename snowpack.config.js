@@ -10,7 +10,10 @@ module.exports = {
    * that contain your static assets.
    */
   mount: {
-    "apps/shared/assets": { url: "/" },
+    public: { url: "/" },
+    "src/shared/assets": { url: "/shared" },
+    "src/root/assets": { url: "/root" },
+    "src/about/assets": { url: "/about" },
   },
   plugins: [
     /* ... */

@@ -1,5 +1,0 @@
-{
-  "imports": {
-    "tailwindcss/dist/tailwind.css": "./tailwindcss/dist/tailwind.css"
-  }
-}
