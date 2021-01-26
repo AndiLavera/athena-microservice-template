@@ -1,0 +1,23 @@
+{
+  "name": "athena-fullstack-micro",
+  "version": "0.1.0",
+  "description": "Athena Fullstack Template",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "npx nodemon --exec ATHENA_ENV=\"development\" crystal run --watch apps/root apps/root/dev.cr",
+    "dev:all": "npx nodemon --exec ATHENA_ENV=\"development\" crystal run --watch apps apps/root/dev.cr -D athena_all",
+    "stage": "npx nodemon --exec ATHENA_ENV=\"production\" crystal run --watch apps apps/root/start.cr",
+    "build": "shards build $1",
+    "build:all": "shards build"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^2.0.7",
+    "snowpack": "^3.0.11",
+    "tailwindcss": "^2.0.2"
+  }
+}

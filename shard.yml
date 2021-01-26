@@ -1,0 +1,32 @@
+name: athena-fullstack-micro
+version: 0.1.0
+
+targets:
+  root:
+    main: apps/root/start.cr
+
+  about:
+    main: apps/about/start.cr
+
+# description: |
+#   Short description of athena-fullstack-micro
+
+authors:
+  - Andrew Crotwell <awcrotwell@gmail.com>
+
+dependencies:
+  athena:
+    github: andrewc910/athena
+    branch: ws
+
+  snowpacker:
+    github: andrewc910/snowpacker.cr
+    # version: ~> 0.1.0
+    branch: main
+
+development_dependencies:
+  ameba:
+    github: crystal-ameba/ameba
+    version: ~> 0.13.0
+
+license: MIT
