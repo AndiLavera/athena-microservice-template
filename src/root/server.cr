@@ -8,7 +8,7 @@ require "../shared/listeners/*"
 require "../shared/initializers/*"
 
 # Require all other microservices if the compiler flag `athena_all` is passed in.
-# This enables you to run/build the root service as a monolith or microservice.
+# This flag enables you to run/build the entire app as a monolith.
 {% if flag?(:athena_all) %}
   # Add any new microservices here.
   #

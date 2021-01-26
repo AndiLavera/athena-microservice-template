@@ -1,0 +1,17 @@
+default: &default
+  host: "./db" # Change to `localhost` if you use postres/mysql
+  adapter: sqlite3
+  # user: athena
+  # password: athena
+
+development:
+  <<: *default
+  db: athena_development
+
+test:
+  <<: *default
+  db: athena_test
+
+production:
+  <<: *default
+  db: athena_production

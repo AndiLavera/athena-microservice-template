@@ -3,10 +3,10 @@ version: 0.1.0
 
 targets:
   root:
-    main: apps/root/start.cr
+    main: src/root/server.cr
 
   about:
-    main: apps/about/start.cr
+    main: src/about/server.cr
 
 # description: |
 #   Short description of athena-fullstack-micro
@@ -19,6 +19,14 @@ dependencies:
     github: andrewc910/athena
     branch: ws
 
+  granite:
+    github: amberframework/granite
+    version: 0.21.1
+
+  sqlite3:
+    github: crystal-lang/crystal-sqlite3
+    verison: 0.18.0
+
   snowpacker:
     github: andrewc910/snowpacker.cr
     # version: ~> 0.1.0
@@ -28,5 +36,17 @@ development_dependencies:
   ameba:
     github: crystal-ameba/ameba
     version: ~> 0.13.0
+
+  # Used for jennifer migration cli
+  jennifer:
+    github: imdrasil/jennifer.cr
+    version: "~> 0.10.0"
+
+  jennifer_sqlite3_adapter:
+    github: imdrasil/jennifer_sqlite3_adapter
+    version: "~> 0.3.0"
+
+  sam:
+    github: imdrasil/sam.cr
 
 license: MIT
