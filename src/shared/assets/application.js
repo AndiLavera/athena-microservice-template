@@ -1,1 +1,1 @@
-console.log("index.js has been loaded");
+console.log("application.js has been loaded");
