@@ -19,13 +19,26 @@ dependencies:
     github: andrewc910/athena
     branch: ws
 
+  # ORM
   granite:
     github: amberframework/granite
     version: 0.21.1
 
+  # Migration Runner
+  micrate:
+    github: juanedi/micrate
+
+  # You can remove this if you change database drivers
   sqlite3:
     github: crystal-lang/crystal-sqlite3
     verison: 0.18.0
+
+  mysql:
+    github: crystal-lang/crystal-mysql
+    version: 0.13.0
+
+  pg:
+    github: will/crystal-pg
 
   snowpacker:
     github: andrewc910/snowpacker.cr
@@ -36,17 +49,5 @@ development_dependencies:
   ameba:
     github: crystal-ameba/ameba
     version: ~> 0.13.0
-
-  # Used for jennifer migration cli
-  jennifer:
-    github: imdrasil/jennifer.cr
-    version: "~> 0.10.0"
-
-  jennifer_sqlite3_adapter:
-    github: imdrasil/jennifer_sqlite3_adapter
-    version: "~> 0.3.0"
-
-  sam:
-    github: imdrasil/sam.cr
 
 license: MIT
