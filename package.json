@@ -12,9 +12,9 @@
     "stage": "npx nodemon --exec ATHENA_ENV=\"production\" crystal run --watch src src/root/server.cr",
     "stage:all": "npx nodemon --exec ATHENA_ENV=\"production\" crystal run --watch src src/root/server.cr -D athena_all",
     "build": "shards build $1 && npm run build:assets",
-    "build:all": "shards build",
+    "build:all": "shards build && npm run build:assets",
     "build:assets": "npx snowpack build",
-    "db": "crystal ./db/cli.cr"
+    "db": "bin/micrate $1"
   },
   "author": "Andrew Crotwell",
   "license": "MIT",
