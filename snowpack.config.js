@@ -15,15 +15,13 @@ module.exports = {
     "src/root/assets": { url: "/root" },
     "src/about/assets": { url: "/about" },
   },
-  plugins: [
-    /* ... */
-  ],
+  plugins: ["@snowpack/plugin-typescript"],
   packageOptions: {
     /* ... */
   },
   devOptions: {
-    output: "stream", // dont clear terminal
-    open: "none", // dont open a web page when the server turns on
+    output: "stream", // Dont clear terminal
+    open: "none", // Dont open a web page when the server turns on
     hmr: true, // Enables hot module reloading
   },
   buildOptions: {
