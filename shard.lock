@@ -41,7 +41,7 @@ shards:
     version: 0.21.1
 
   micrate:
-    git: https://github.com/juanedi/micrate.git
+    git: https://github.com/amberframework/micrate.git
     version: 0.9.0
 
   mysql:
@@ -54,7 +54,7 @@ shards:
 
   snowpacker:
     git: https://github.com/andrewc910/snowpacker.cr.git
-    version: 0.1.0+git.commit.434c9b90e6f6cc0f4984bf6954d55461874a7aaf
+    version: 0.1.0+git.commit.7bc8ebd11d8cce6f50a0357b6c115b907eda381a
 
   sqlite3:
     git: https://github.com/crystal-lang/crystal-sqlite3.git

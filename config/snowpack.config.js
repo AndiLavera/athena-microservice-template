@@ -16,7 +16,13 @@ module.exports = {
     "../src/about/assets": { url: "/about" },
   },
   plugins: [
-    /* ... */
+    [
+      "@snowpack/plugin-sass",
+      {
+        style: "compressed",
+        sourceMap: true,
+      },
+    ],
   ],
   packageOptions: {
     /* ... */
