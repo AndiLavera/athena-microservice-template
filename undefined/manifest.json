@@ -1,0 +1,21 @@
+{
+  "application.js": "/application.js",
+  "entrypoints": {
+    "application": {
+      "js": "/application.js"
+    },
+    "index": {
+      "js": "/index.js"
+    },
+    "index2": {
+      "js": "/index2.js"
+    }
+  },
+  "index.js": "/index.js",
+  "index2.js": "/index2.js",
+  "assets": {
+    "application": "/application.js",
+    "index": "/index.js",
+    "index2": "/index2.js"
+  }
+}

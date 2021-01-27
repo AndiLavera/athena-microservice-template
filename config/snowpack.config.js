@@ -20,7 +20,7 @@ module.exports = {
       "snowpack-plugin-rollup-bundle",
       {
         emitHtmlFiles: false,
-        preserveSourceFiles: true,
+        preserveSourceFiles: false,
 
         // equivalent to inputOptions.input from Rollup
         entrypoints: [
@@ -28,6 +28,14 @@ module.exports = {
           "src/root/assets/index.js",
           "src/about/assets/index.js",
         ],
+        extendConfig: (config) => {
+          // https://rollupjs.org/guide/en/#outputoptions-object
+          config.outputOptions = {
+            // dir: "./public/dist",
+          };
+
+          return config;
+        },
       },
     ],
   ],
