@@ -19,7 +19,11 @@
   "author": "Andrew Crotwell",
   "license": "MIT",
   "dependencies": {
-    "nodemon": "^2.0.7",
-    "snowpack": "^3.0.11"
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "rollup": "^2.38.0",
+    "snowpack": "^3.0.11",
+    "snowpack-plugin-rollup-bundle": "^0.3.3"
   }
 }

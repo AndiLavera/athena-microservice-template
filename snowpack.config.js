@@ -16,7 +16,20 @@ module.exports = {
     "src/about/assets": { url: "/about" },
   },
   plugins: [
-    /* ... */
+    [
+      "snowpack-plugin-rollup-bundle",
+      {
+        emitHtmlFiles: false,
+        preserveSourceFiles: true,
+
+        // equivalent to inputOptions.input from Rollup
+        entrypoints: [
+          "src/shared/assets/application.js",
+          "src/root/assets/index.js",
+          "src/about/assets/index.js",
+        ],
+      },
+    ],
   ],
   packageOptions: {
     /* ... */
@@ -28,5 +41,6 @@ module.exports = {
   },
   buildOptions: {
     out: "public/dist", // The folder assets will be written to after building
+    clean: true,
   },
 };
