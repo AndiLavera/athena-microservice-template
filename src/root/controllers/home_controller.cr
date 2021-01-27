@@ -10,6 +10,7 @@ class HomeController < ART::Controller
       <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
       <meta content="utf-8" http-equiv="encoding">
       <link rel="stylesheet" href="shared/application.css">
+      <link rel="stylesheet" href="root/styles.css">
       <script src="shared/application.js" type="module" defer></script>
       <script src="root/index.js" type="module" defer></script>
     <head>
