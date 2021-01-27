@@ -10,10 +10,10 @@ module.exports = {
    * that contain your static assets.
    */
   mount: {
-    public: { url: "/" },
-    "src/shared/assets": { url: "/shared" },
-    "src/root/assets": { url: "/root" },
-    "src/about/assets": { url: "/about" },
+    "../public": { url: "/" },
+    "../src/shared/assets": { url: "/shared" },
+    "../src/root/assets": { url: "/root" },
+    "../src/about/assets": { url: "/about" },
   },
   plugins: [
     [
@@ -40,7 +40,7 @@ module.exports = {
     hmr: true, // Enables hot module reloading
   },
   buildOptions: {
-    out: "public/dist", // The folder assets will be written to after building
+    out: "../public/dist", // The folder assets will be written to after building
     clean: true,
   },
 };

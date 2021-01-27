@@ -1,9 +1,9 @@
-# Require everything for this microservice
-require "./**"
-
-# Require any shared libraries
+# Requires for any shared libraries
 require "../shared/listeners/*"
 require "../shared/initializers/*"
+
+# Requires for this microservice
+require "./**"
 
 # Require all other microservices if the compiler flag `athena_all` is passed in.
 # This flag enables you to run/build the entire app as a monolith.

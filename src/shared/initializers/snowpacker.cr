@@ -8,6 +8,8 @@ Snowpacker::Engine.configure do |config|
   # I am thinking someone may want the snowpack server on but forgot to set this.
   # I could move this into a method, rescue the error and provide a nice error message?
   config.enabled = ENV["ATHENA_ENV"]? == "development"
+
+  config.config_path = "config"
 end
 
 Snowpacker::Engine.run

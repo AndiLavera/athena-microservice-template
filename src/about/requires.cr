@@ -1,6 +1,6 @@
-# Require any shared libraries
+# Requires for any shared libraries
 require "../shared/listeners/*"
 require "../shared/initializers/*"
 
-# Require this microservice
+# Requires for this microservice
 require "./controllers/*"
