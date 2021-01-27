@@ -1,5 +1,11 @@
-name: athena-fullstack-micro
+name: athena-mono-micro-template
 version: 0.1.0
+
+# description: |
+#   Short description of athena-fullstack-micro
+
+authors:
+  - Andrew Crotwell <awcrotwell@gmail.com>
 
 targets:
   root:
@@ -7,12 +13,6 @@ targets:
 
   about:
     main: src/about/server.cr
-
-# description: |
-#   Short description of athena-fullstack-micro
-
-authors:
-  - Andrew Crotwell <awcrotwell@gmail.com>
 
 dependencies:
   athena:
@@ -24,21 +24,17 @@ dependencies:
     github: amberframework/granite
     version: 0.21.1
 
-  # Migration Runner
-  micrate:
-    github: juanedi/micrate
-
-  # You can remove this if you change database drivers
+  # Choose your database driver:
   sqlite3:
     github: crystal-lang/crystal-sqlite3
     verison: 0.18.0
 
-  mysql:
-    github: crystal-lang/crystal-mysql
-    version: 0.13.0
+  # mysql:
+  #   github: crystal-lang/crystal-mysql
+  #   version: 0.13.0
 
-  pg:
-    github: will/crystal-pg
+  # pg:
+  #   github: will/crystal-pg
 
   snowpacker:
     github: andrewc910/snowpacker.cr
@@ -49,5 +45,9 @@ development_dependencies:
   ameba:
     github: crystal-ameba/ameba
     version: ~> 0.13.0
+
+  # Migration Runner
+  micrate:
+    github: amberframework/micrate
 
 license: MIT

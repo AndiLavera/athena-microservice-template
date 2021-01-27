@@ -40,29 +40,17 @@ shards:
     git: https://github.com/amberframework/granite.git
     version: 0.21.1
 
-  i18n:
-    git: https://github.com/TechMagister/i18n.cr.git
-    version: 0.3.1
+  micrate:
+    git: https://github.com/juanedi/micrate.git
+    version: 0.9.0
 
-  ifrit:
-    git: https://github.com/imdrasil/ifrit.git
-    version: 0.1.2
+  mysql:
+    git: https://github.com/crystal-lang/crystal-mysql.git
+    version: 0.11.2
 
-  inflector:
-    git: https://github.com/phoffer/inflector.cr.git
-    version: 0.1.8
-
-  jennifer:
-    git: https://github.com/imdrasil/jennifer.cr.git
-    version: 0.10.0
-
-  jennifer_sqlite3_adapter:
-    git: https://github.com/imdrasil/jennifer_sqlite3_adapter.git
-    version: 0.3.0
-
-  sam:
-    git: https://github.com/imdrasil/sam.cr.git
-    version: 0.4.0
+  pg:
+    git: https://github.com/will/crystal-pg.git
+    version: 0.21.1
 
   snowpacker:
     git: https://github.com/andrewc910/snowpacker.cr.git
