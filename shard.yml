@@ -36,11 +36,6 @@ dependencies:
   # pg:
   #   github: will/crystal-pg
 
-  snowpacker:
-    github: andrewc910/snowpacker.cr
-    # version: ~> 0.1.0
-    branch: main
-
 development_dependencies:
   ameba:
     github: crystal-ameba/ameba
@@ -49,5 +44,10 @@ development_dependencies:
   # Migration Runner
   micrate:
     github: amberframework/micrate
+
+  snowpacker:
+    github: andrewc910/snowpacker.cr
+    # version: ~> 0.1.0
+    branch: main
 
 license: MIT
