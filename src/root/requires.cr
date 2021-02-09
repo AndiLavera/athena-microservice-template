@@ -1,13 +1,17 @@
 # Requires for any shared libraries
 require "../shared/listeners/*"
-require "../shared/initializers/*"
+
+# Only require snowpacker in dev environments
+{% if flag? :development %}
+  require "../shared/initializers/snowpacker"
+{% end %}
 
 # Requires for this microservice
 require "./**"
 
 # Require all other microservices if the compiler flag `athena_all` is passed in.
 # This flag enables you to run/build the entire app as a monolith.
-{% if flag?(:athena_all) %}
+{% if flag? :dev_all %}
   # Add any new microservices here.
   #
   # To add a new microservice, create a folder in `src` and add the folder name to the
